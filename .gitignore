@@ -60,3 +60,5 @@ public/
 bundle-stats.json
 
 tailwind.custom.css
+
+scripts/gatsby-deploy
