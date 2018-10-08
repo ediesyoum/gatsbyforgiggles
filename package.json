@@ -38,6 +38,7 @@
   "scripts": {
     "develop": "gatsby develop -o",
     "build": "gatsby build",
+    "test": "echo 'Run your tests here'",
     "lint": "eslint . --ext .js,.jsx --ignore-path .gitignore",
     "lint:fix": "eslint . --ext .js,.jsx --fix --ignore-path .gitignore",
     "predevelop": "postcss tailwind.css -o tailwind.custom.css",
