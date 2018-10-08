@@ -1,0 +1,26 @@
+language: node_js
+node_js:
+- '10.0'
+
+dist: trusty
+sudo: false
+
+addons:
+  ssh_known_hosts:
+  - 172.104.209.188
+
+before_install:
+- openssl aes-256-cbc -K $encrypted_9e3557de08a3_key -iv $encrypted_9e3557de08a3_iv
+  -in scripts/gatsby-deploy.enc -out scripts/gatsby-deploy -d
+- eval "$(ssh-agent -s)"
+- cp scripts/gatsby-deploy ~/.ssh/gatsby-deploy
+- chmod 600 ~/.ssh/gatsby-deploy
+- ssh-add ~/.ssh/gatsby-deploy
+- echo -e "Host 172.104.209.188\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
+
+deploy:
+- provider: script
+  skip_cleanup: true
+  script: bash scripts/deploy.sh
+  on:
+    branch: master

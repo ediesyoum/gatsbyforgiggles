@@ -161,7 +161,7 @@ const Index = () => (
           <BigTitle>
             Hello, <br /> I'm Eden Syoum.
           </BigTitle>
-          <Subtitle>This is my awesome Gatsby site.</Subtitle>
+          <Subtitle>This is my fancy Gatsby site.</Subtitle>
         </Hero>
       </Content>
       <DividerMiddle
