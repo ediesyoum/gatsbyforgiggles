@@ -1,5 +1,6 @@
 language: node_js
 node_js:
+<<<<<<< HEAD
 - '10.0'
 
 dist: trusty
@@ -24,3 +25,9 @@ deploy:
   script: bash scripts/deploy.sh
   on:
     branch: master
+=======
+  - '10.0'
+
+dist: trusty
+sudo: false
+>>>>>>> 6ee239ed7e0062b293699214df74891ac7ad40c9
