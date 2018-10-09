@@ -159,7 +159,7 @@ const Index = () => (
       <Content speed={0.4} offset={0}>
         <Hero>
           <BigTitle>
-            Hello, <br /> I'm Eden.
+            Hello, <br /> Im Eden.
           </BigTitle>
           <Subtitle>This is my fancy Gatsby site.</Subtitle>
         </Hero>
