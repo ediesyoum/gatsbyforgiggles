@@ -55,9 +55,9 @@ jspm_packages
 # Gatsby context
 .gatsby-context.js
 
+scripts/gatsby-deploy
+
 # Bundle stats
 bundle-stats.json
 
 tailwind.custom.css
-
-scripts/gatsby-deploy

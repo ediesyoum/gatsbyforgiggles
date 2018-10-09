@@ -50,15 +50,14 @@ jspm_packages
 
 
 # Build Files
-public/
 .cache/
 
 # Gatsby context
 .gatsby-context.js
 
+scripts/gatsby-deploy
+
 # Bundle stats
 bundle-stats.json
 
 tailwind.custom.css
-
-scripts/gatsby-deploy
